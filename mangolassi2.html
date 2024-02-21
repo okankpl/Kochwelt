@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="img/logo_small.png" type="image/x-icon" />
+    <title>Kochwelt</title>
+    <link rel="tab icon" href="../img/logo_small.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mango-Lassi</title>
+  </head>
+  <body onload="init()">
+    <div w3-include-html="templates/header.html"></div>
+    <div class="header-underline"></div>
+    <div class="recipe-container">
+      <span class="headline">
+        <h1>Mango-Lassi</h1>
+      </span>
+
+      <div class="recipe-img">
+        <img src="img/Mango-Lassi.webp" alt="" />
+      </div>
+      <div class="time-difficulty-container">
+        <div class="t-d-container">
+          <img src="img/clock-regular.svg" alt="" />15 min.
+        </div>
+        <div class="t-d-container">
+          <img src="img/brain-solid.svg" alt="" />simpel
+        </div>
+        <div class="t-d-container">
+          <img src="img/calendar-alt-regular.svg" alt="" />17.02.2024
+        </div>
+      </div>
+      <div class="underline"></div>
+      <div class="inputArea">
+        <label for="amount">Zutaten für: </label>
+        <input id="amount" type="number" min="1" max="20" name="" />
+        <button onclick="calcPortions()">Portionen</button>
+      </div>
+      <div class="ingredients" id="ingredients"></div>
+      <h2>Zubereitung</h2>
+      <div class="cooking-time">
+        <div class="cooking-time-container">
+          <img src="img/clock-regular.svg" alt="" />Arbeitszeit ca. 15 Minuten
+        </div>
+        <div class="cooking-time-container">
+          <img src="img/clock-regular.svg" alt="" /> Gesamtzeit ca. 15 Minuten
+        </div>
+      </div>
+      <span>
+        Die Mango schälen und das Fruchtfleisch würfeln. Die Mangowürfel mit dem
+        Zitronensaft, dem Joghurt und der Milch in einen Mixer geben und cremig
+        mixen.
+      </span>
+      <h2>Rezept erstellt von</h2>
+      <div class="profile">
+        <div>
+          <img src="img/smile2.png" alt="" />
+        </div>
+        <span>Boban, Okan & Susanne</span>
+      </div>
+    </div>
+    <div w3-include-html="templates/footer.html"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

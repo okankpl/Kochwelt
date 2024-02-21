@@ -1,0 +1,442 @@
+body {
+  width: 100%;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  overflow-x: hidden !important;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 80%;
+}
+
+header img {
+  height: 65px;
+}
+
+.header-underline {
+  width: 100%;
+  height: 2px;
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+  padding-bottom: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+nav a:hover {
+  color: #008000;
+  padding-bottom: 5px;
+  border-bottom: 5px solid #008000;
+  margin-bottom: -10px;
+}
+
+.main-dish-container {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  gap: 20px;
+  width: 80%;
+}
+
+.desc-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.desc-container h2 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-bottom: 20px;
+}
+
+.dish-img {
+  width: 100%;
+}
+
+.dish-img img {
+  height: 300px;
+  width: 90%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.main-dish-container button {
+  background-color: #008000;
+  color: white;
+  padding: 15px;
+  width: 180px;
+  border: none;
+}
+
+.main-dish-container button:hover {
+  cursor: pointer;
+}
+
+.bgr-color-suggestions {
+  background-color: #e6e6e6;
+  width: 100%;
+}
+.suggestions {
+  width: 100%;
+
+  text-align: center;
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.suggested-meals {
+  display: flex;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.suggested-meals img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  width: 50%;
+  border-radius: 8px;
+}
+
+.width33 {
+  width: 33%;
+}
+
+.suggestions h2 {
+  margin-top: 50px;
+  padding-top: 35px;
+  padding-bottom: 20px;
+}
+
+.comparsion-container {
+  width: 80%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  max-width: 1440px;
+}
+
+.suggestions a {
+  text-decoration: none;
+  color: black;
+}
+
+.comparsion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.comparsion img {
+  width: 150%;
+  border-radius: 8px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+/* rezept.html */
+
+.recipe-container {
+  margin-top: 30px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+}
+
+.recipe-img img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.time-difficulty-container {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.time-difficulty-container img {
+  height: 20px;
+}
+
+.t-d-container {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  background-color: #e6e6e6;
+  padding: 8px;
+  border-radius: 10px;
+  height: 20px;
+  font-size: 13px;
+}
+
+.underline {
+  height: 2px;
+  background-color: #e6e6e6;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.inputArea {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.inputArea input {
+  margin-left: 10px;
+  height: 36px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 1px solid;
+  width: 150px;
+  border: none;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.inputArea button {
+  padding: 12px;
+  width: 140px;
+  background-color: #008000;
+  color: white;
+  border: none;
+}
+
+.ingredients {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.colored-bgr {
+  background-color: #e6e6e6;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.uncolored-bgr {
+  padding: 15px;
+}
+
+.cooking-time {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  font-size: 13px;
+}
+
+.cooking-time img {
+  height: 13px;
+  margin-right: 5px;
+}
+
+.cooking-time-container {
+  background-color: #e6e6e6;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.profile img {
+  height: 80px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.d-none {
+  display: none;
+}
+
+.form {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  background-color: #e6e6e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+label {
+  margin-top: 20px;
+}
+
+form input {
+  width: 300px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+form textarea {
+  width: 300px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  resize: none;
+}
+
+form button {
+  padding: 12px;
+  width: 140px;
+  background-color: #008000;
+  color: white;
+  border: none;
+  margin: 30px;
+  border-radius: 5px;
+}
+
+.max-width {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#emailSend {
+  text-align: center;
+  margin-top: 50px;
+}
+
+button {
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #0c0c0c49;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.legal-container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+}
+
+@media (max-width: 550px) {
+  .form {
+    width: 300px;
+  }
+
+  form textarea,
+  form input {
+    width: 250px;
+  }
+}
+
+@media (max-width: 750px) {
+  .main-dish-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .suggested-meals {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .width33 {
+    width: 100%;
+  }
+  .comparsion {
+    flex-direction: column;
+  }
+  .comparsion img {
+    width: 40vw;
+  }
+}
+
+@media (max-width: 650px) {
+  footer img {
+    display: none;
+  }
+  footer {
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 850px) {
+  nav {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .time-difficulty-container {
+    flex-direction: column;
+    height: 150px;
+  }
+
+  header img {
+    height: 58px;
+  }
+}
+
+header {
+  max-width: 1440px;
+}

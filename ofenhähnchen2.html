@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="img/logo_small.png" type="image/x-icon" />
+    <title>Kochwelt</title>
+    <link rel="tab icon" href="../img/logo_small.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ofenhähnchen</title>
+  </head>
+  <body onload="init()">
+    <div w3-include-html="templates/header.html"></div>
+    <div class="header-underline"></div>
+    <div class="recipe-container">
+      <span class="headline">
+        <h1>Ofenhähnchen</h1>
+      </span>
+
+      <div class="recipe-img">
+        <img src="img/ofenhaehnchen.jpg" alt="" />
+      </div>
+      <div class="time-difficulty-container">
+        <div class="t-d-container">
+          <img src="img/clock-regular.svg" alt="" />65 min.
+        </div>
+        <div class="t-d-container">
+          <img src="img/brain-solid.svg" alt="" />simpel
+        </div>
+        <div class="t-d-container">
+          <img src="img/calendar-alt-regular.svg" alt="" />17.02.2024
+        </div>
+      </div>
+      <div class="underline"></div>
+      <div class="inputArea">
+        <label for="amount">Zutaten für: </label>
+        <input id="amount" type="number" min="1" max="20" name="" />
+        <button onclick="calcPortions()">Portionen</button>
+      </div>
+      <div class="ingredients" id="ingredients"></div>
+      <h2>Zubereitung</h2>
+      <div class="cooking-time">
+        <div class="cooking-time-container">
+          <img src="img/clock-regular.svg" alt="" />Arbeitszeit ca. 20 Minuten
+        </div>
+        <div class="cooking-time-container">
+          <img src="img/clock-regular.svg" alt="" /> Gesamtzeit ca. 65 Minuten
+        </div>
+      </div>
+      <span>
+        Eine große Ofenform (30 x 40 cm) mit etwas Olivenöl ausreiben.
+        Hähnchenschenkel mit Küchenpapier trocken tupfen. Mit Olivenöl,
+        Paprikapulver, Salz und Pfeffer marinieren. Zwiebeln und Knoblauch
+        abziehen und die Zwiebeln in Spalten schneiden. Rosmarin und Thymian
+        waschen, abtropfen lassen, Nadeln bzw. Blätter vom Stiel zupfen, mit dem
+        Knoblauch fein hacken und mit dem restlichen Olivenöl verrühren.
+        Kartoffeln, Gemüse und Zitrone waschen und abtropfen lassen. Kartoffeln
+        halbieren, Zucchini und Paprikaschoten putzen. Zucchini in 1 cm dicke
+        Scheiben und Paprika in Streifen schneiden. Backofen auf 200 Grad Ober-
+        und Unterhitze (Umluft: 180 Grad) vorheizen. Möhren schälen und in 0,5
+        cm dicke Scheiben schneiden. Kartoffeln, Zucchini, Paprika, Möhren und
+        Zwiebeln in die Ofenform geben, mit 1 TL Salz und 4 EL von dem
+        Rosmarin-Thymian-Knoblauch-Öl marinieren. Zitrone in Scheiben schneiden
+        und mit den Hähnchenschenkeln auf dem Gemüse verteilen. Mit Weißwein und
+        Geflügelbrühe aufgießen und im vorgeheizten Ofen auf der mittleren
+        Schiene ca. 45 Minuten backen. Kirschtomaten mit restlichem Kräuteröl
+        marinieren, 10 Minuten vor Ende der Garzeit in die Ofenform geben und
+        mitbacken. Ofenhähnchen mit Salz und Pfeffer würzen und nach Wunsch mit
+        frischen Kräutern bestreut servieren.
+      </span>
+      <h2>Rezept erstellt von</h2>
+      <div class="profile">
+        <div>
+          <img src="img/20230111_201207.jpg" alt="" />
+        </div>
+        <span>Susanne</span>
+      </div>
+    </div>
+    <div w3-include-html="templates/footer.html"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
